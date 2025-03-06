@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Text Editor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Live Text Editor</h1>
+    <p>Edit any text on the current page:</p>
+    <div class="button-group">
+      <button id="enableEditing">Enable Editing</button>
+      <button id="disableEditing">Disable Editing</button>
+    </div>
+    <div class="options">
+      <h2>Options</h2>
+      <label>
+        <input type="checkbox" id="highlightEditable" checked>
+        Highlight editable elements
+      </label>
+      <label>
+        <input type="checkbox" id="saveChanges" checked>
+        Remember changes for this site
+      </label>
+    </div>
+    <div class="footer">
+      <p>Click on any text to edit it!</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

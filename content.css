@@ -1,0 +1,68 @@
+.lte-editable {
+    outline: 2px dashed #ff0000 !important;
+    cursor: pointer !important;
+    transition: outline-color 0.2s ease !important;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3) !important;
+  }
+
+  .lte-editable:hover {
+    outline: 3px solid #ff0000 !important;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5) !important;
+  }
+
+.lte-editing {
+  outline: 2px solid #34a853 !important;
+  background-color: rgba(52, 168, 83, 0.1) !important;
+}
+
+.lte-editor {
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 90vw;
+  max-height: 50vh;
+  min-width: 500px;
+}
+
+.lte-editor textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: both;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.lte-editor-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.lte-editor-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lte-save-btn {
+  background-color: #34a853;
+  color: white;
+}
+
+.lte-cancel-btn {
+  background-color: #ea4335;
+  color: white;
+}
+
